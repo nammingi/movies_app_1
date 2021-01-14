@@ -1,3 +1,41 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
 * {
   box-sizing: border-box;
 }
@@ -5,15 +43,12 @@
 body {
   margin: 0;
   padding: 0;
-  @@ -6,3 +10,80 @@ body {
-    background-color: #eff3f7;
-    height: 100%;
-  }
+  background-color: #eff3f7;
+  height: 100%;
 }
 
 html,
 body,
-#potato,
 .container {
   height: 100%;
   display: flex;
@@ -28,6 +63,13 @@ body,
   align-items: center;
 }
 
+.loader__text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 500;
+}
+
 .movies {
   display: flex;
   justify-content: space-between;
@@ -40,6 +82,7 @@ body,
 
 .movies .movie {
   width: 45%;
+  min-width: 550px;
   background-color: white;
   margin-bottom: 70px;
   display: flex;
@@ -53,7 +96,7 @@ body,
     0 8px 16px -8px rgba(0, 0, 0, 0.3), 0 -6px 16px -6px rgba(0, 0, 0, 0.025);
 }
 
-.movie img {
+.movie .poster {
   position: relative;
   top: -50px;
   max-width: 120px;
@@ -86,4 +129,9 @@ body,
 .movie .movie__year {
   margin-right: 10px;
   font-size: 14px;
+}
+
+.viewmore {
+  font-style: oblique;
+  font-weight: 500;
 }

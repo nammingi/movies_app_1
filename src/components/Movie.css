@@ -43,10 +43,10 @@
 body {
   margin: 0;
   padding: 0;
-  @@ -6,3 +10,80 @@ body {
-    background-color: #eff3f7;
-    height: 100%;
-  }
+}
+@@ -6,3 +10,80 @@ body {
+  background-color: #eff3f7;
+  height: 100%;
 }
 
 html,
@@ -64,6 +64,13 @@ body,
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.loader__text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 500;
 }
 
 .movies {
@@ -130,4 +137,12 @@ body,
 .viewmore {
   font-style: oblique;
   font-weight: 500;
+}
+
+.movie .movie a {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  text-decoration: none;
+  color: inherit;
 }
